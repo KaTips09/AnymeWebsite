@@ -1,0 +1,777 @@
+*{
+	box-sizing: border box;
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header{
+	height: 100px;
+	background: #ffad33;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+	box-shadow: 0px 5px 15px #888888;
+}
+
+#logo{
+	cursor: pointer;
+}
+
+.show-content{
+	display: none;
+	position: absolute;
+	background-image: url('Images/anime.gif');
+	background-size: 100% 100%;
+	width: 250px;
+	height: 120px;
+	box-shadow: 10px 10px 5px #888888;
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.show-content a{
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-family: 'Nova Flat', sans-serif;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.dropdown-show:hover .show-content{
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.simul-content{
+	display: none;
+	position: absolute;
+	background-image: url('Images/anime.gif');
+	background-size: 100% 100%;
+	width: 280px;
+	height: 80px;
+	box-shadow: 10px 10px 5px #888888;
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.simul-content a{
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-family: 'Nova Flat', sans-serif;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.dropdown-simul:hover .simul-content{
+	display: block;
+	color:  #bfbfbf;
+	transition: all 0.3s ease;
+}
+
+.manga-content{
+	display: none;
+	position: absolute;
+	background-image: url('Images/anime.gif');
+	background-size: 100% 100%;
+	width: 230px;
+	height: 80px;
+	box-shadow: 10px 10px 5px #888888;
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.manga-content a{
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-family: 'Nova Flat', sans-serif;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.dropdown-manga:hover .manga-content{
+	display: block;
+	color:  #bfbfbf;
+	transition: all 0.3s ease;
+}
+
+.genre-content{
+	display: none;
+	position: absolute;
+	background-image: url('Images/anime.gif');
+	background-size: 100% 100%;
+	width: 320px;
+	height: 220px;
+	box-shadow: 10px 10px 5px #888888;
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.genre-content a{
+	justify-content: flex-start;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-family: 'Nova Flat', sans-serif;
+	padding: 0px 15px;
+	width: 100%;
+}
+
+.dropdown-genre:hover .genre-content{
+	display: block;
+	color:  #bfbfbf;
+	transition: all 0.3s ease;
+}
+
+.logo{
+	cursor: pointer;
+	color: #000000;
+	font-size: 25px;
+}
+
+.logo-img{
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	width: 160px;
+	padding: 0px 5px;
+}
+
+.nav-links{
+	position: absolute;
+	top: 35px;
+	left: 230px;
+	display: flex;
+	width: 100%;	
+	list-style: none;
+}
+
+.nav-links a{
+	text-decoration: none;
+	font-family: 'Lobster', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #000000;
+}
+
+.btn1{
+	position: absolute;
+	top: -5px;
+	right: 500px;
+	width: 160px;
+	height: 70px;
+	z-index: 999;
+}
+
+.btn1 a{
+	color: #ffebcc;
+}
+	
+.button1{
+	display: inline-block;
+	width: 200px;
+	height: 28px;
+	padding: 5px; 
+	background-color: #000000; 
+}
+
+.btn2{
+	position: absolute;
+	top: -5px;
+	right: 250px;
+	width: 160px;
+	height: 70px;
+	z-index: 999;
+}
+
+.btn2 a{
+	color: #ffebcc;
+}
+	
+.button2{
+	display: inline-block;
+	width: 100px;
+	height: 28px;
+	padding: 5px;   
+	background-color: #000000; 
+}
+
+.nav-links a:hover{
+	color:  #ffffff;
+	transition: all 0.3s ease;
+}
+
+.button1:hover{
+	background: #cc6600;
+	transition: all 0.3s ease;
+}
+
+.button2:hover{
+	background: #cc6600;
+	transition: all 0.3s ease;
+}
+
+section{
+	position: relative;
+	min-height: 100vh;
+	background: url('Images/accountImage.jpg'); 
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-family: 'Nova Flat', sans-serif;
+	font-size: 20px;
+}
+
+section .createAcc-container{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	box-shadow: 0px 15px 50px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+section .createAcc-container .user{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+section .createAcc-container .user .imgBox{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: #ff0;
+	transition: 0.5s;
+}
+
+section .createAcc-container .user .imgBox img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .createAcc-container .user .formBox{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 10px;
+	transition: 0.5s;
+}	
+
+section .createAcc-container .user .formBox form h2{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	color: #000000;
+}
+
+section .createAcc-container .user .formBox form input{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	background: #f5f5f5;
+	color: #333;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	margin: 8px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+section .createAcc-container .user .formBox form input[type = "submit"]{
+	max-width: 100px;
+	background: #677eff;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+section .createAcc-container .user .formBox form .signUp{
+	position: relative;
+	margin-top: 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #555;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+section .createAcc-container .user .formBox form .signUp a{
+	font-weight: 600;
+	text-decoration: none;
+	color: #677eff;
+}
+
+section .createAcc-container .signupBox{
+	pointer-events: none;
+}
+
+section .createAcc-container.active .signupBox{
+	pointer-events: initial;
+}
+
+section .createAcc-container .signupBox .formBox{
+	left: 100%;
+}
+
+section .createAcc-container.active .signupBox .formBox{
+	left: 0;
+}
+
+section .createAcc-container .signupBox .imgBox{
+	left: -100%;
+}
+
+section .createAcc-container.active .signupBox .imgBox{
+	left: 0;
+}
+
+#slider, .wrap, .slide-content{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lobster', sans-serif;
+	width: 100%;
+	height: 150vh;
+	overflow: hidden;
+}
+
+.wrap{
+	position: relative;
+}
+
+.slide{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide1{background-image: url('Images/Wallpaper/1.jpg')}
+.slide2{background-image: url('Images/Wallpaper/2.jpg')}
+.slide3{background-image: url('Images/Wallpaper/3.jpg')}
+.slide4{background-image: url('Images/Wallpaper/4.jpg')}
+
+.slide-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.slide-content span{
+	position: absolute;
+	bottom: 100px;
+	font-size: 72px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#ff9900, #ff3300);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+}
+
+#arrow-left{
+	border-width: 30px 40px 30px 0px;
+	border-color: transparent #ffad33 transparent transparent;
+	left: 0px;
+	margin-left: 30px;
+}
+
+#arrow-right{
+	border-width: 30px 0px 30px 40px;
+	border-color: transparent transparent transparent #ffad33;
+	right: 0px;
+	margin-right: 30px;
+}
+
+.body{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background: #ffad33;
+}
+
+.search-container{
+	width: 30%;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.search-box{
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+
+.search{
+	width: 100%;
+	border: 3px solid #fd5e53;
+	border-right: none;
+	padding: 5px;
+	height: 40px;
+	outline: none;
+	color: #ffffff;
+}
+
+.search:focus{
+	color: #000000;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.search-btn{
+	width: 60px;
+	border: 1px solid #fd5e53;
+	background-image: url('Images/anime.gif');
+	background-size: 100% 100%;
+	text-align: center;
+	color: #000000;
+	border-radius: 0px 5px 5px 0px;
+	cursor: pointer;
+	font-size: 30px;
+}
+.search-btn:hover{
+	color: #ffffff;
+}
+
+.allshows-body{
+	background-image: url(https://i.redd.it/vemz5x0asn651.png);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+.allShows-container{
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	width: 1280px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.allShows-container .box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #ffad33;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.allShows-container .box .imgBox{
+	position: relative;
+}
+
+.allShows-container .box .imgBox img{
+	max-width: 100%;
+	transition: transform 2s;
+}
+
+.allShows-container .box:hover .imgBox img{
+	transform: scale(1.2);
+}
+
+.allShows-container .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgb(255, 204, 153, .8);
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+
+.allShows-container .box:hover .details{
+	transform: scaleX(1);
+}
+
+.allShows-container .box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #ff0000;
+}
+
+.allShows-container .box .details .content h2{
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Nova Flat', sans-serif;
+	font-size: 20px;
+	color: #000000;
+}
+
+.allShows-container .box .details .content p{
+	text-align: left;
+	margin: 10px 0 0;
+	padding: 0px;
+	font-family: 'Nova Flat', sans-serif;
+	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-color: #000000;
+}
+
+.footer-allshows{
+	position: absolute;
+	bottom: -260px;
+	padding: 50px;
+	height: 100px;
+	width: 1350px;
+	background-color: #ffad33;
+}
+
+.footAllshows-img{
+	position: absolute;
+	bottom: 30px;
+	margin-left: 60px;
+	width: 270px;
+}
+
+.footAllshows-first p{
+	position: absolute;
+	left: 30%;
+	padding: 0px 18px;
+	margin: 0px 16px;
+	font-family: 'Nova Flat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.recent-section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.recent-section video{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.recent-navigation{
+	position: absolute;
+	bottom: -320px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.recent-navigation li{
+	list-style: none;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 4px;
+	background: #ffffff;
+	padding: 3px 3px 0px;
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.recent-image{
+	width: 200px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.recent-navigation li:hover{
+	opacity: 1;
+}
+
+.recent-image:hover{
+	width: 250px;
+	opacity: 1;
+}
+
+.footer-recent{
+	position: absolute;
+	bottom: -611px;
+	padding: 50px;
+	height: 100px;
+	width: 1350px;
+	background-color: #ffad33;
+}
+
+.footRecent-img{
+	position: absolute;
+	bottom: 30px;
+	margin-left: 60px;
+	width: 270px;
+}
+
+.footRecent-first p{
+	position: absolute;
+	left: 30%;
+	padding: 0px 18px;
+	margin: 0px 16px;
+	font-family: 'Nova Flat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.Mainfooter{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 50px;
+	height: 220px;
+	background-color: #ffad33;
+}
+
+.Mainfoot-img{
+	position: absolute;
+	bottom: -580px;
+	margin-left: 60px;
+	width: 270px;
+}
+
+.Mainfooter-first p{
+	position: absolute;
+	left: 30%;
+	padding: 0px 18px;
+	margin: 0px 16px;
+	font-family: 'Nova Flat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.footer-second{
+	display: flex;
+	position: absolute;
+	bottom: -610px;
+	left: 150px;
+	margin: auto;
+}
+
+.footer-second li{
+	list-style: none;
+}
+
+.footer-second a{
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Nova Flat', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.footer-second a:hover{
+	color:  #ffffff;
+	transition: all 0.3s ease;
+}
+
+.Mainsocial-icons ul{
+	display: flex;
+	position: absolute;
+	bottom: -650px;
+	left: 50%;
+	padding: 0px;
+	margin: 0px;
+	transform: translate(-50%, 50%);
+}
+
+.Mainsocial-icons ul li{
+	list-style: none;
+	margin: 0 50px;
+}
+
+.Mainsocial-icons ul li .fa{
+	font-size: 30px;
+	line-height: 60px;
+	transition: .6s;
+	color: #000000;
+}
+
+.Mainsocial-icons ul li a{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #ffebcc;
+	text-align: center;
+	transition: .6s;
+	box-shadow: 0px 5px 4px rgba(0,0,0,.5);
+}
+
+.Mainsocial-icons ul li a:hover{
+	transform: translate(0,-10px);
+}
+
+.Mainsocial-icons ul li .fa:hover{
+	color: #cc6600;
+	transform: translate(0,-10px);
+}
+
+.Mainsocial-icons ul li:nth-child(1) a:hover{
+	background-color: #0099ff;
+}
+.Mainsocial-icons ul li:nth-child(2) a:hover{
+	background-color: #ff9900;
+}
+.Mainsocial-icons ul li:nth-child(3) a:hover{
+	background-color: #00ccff;
+}
+.Mainsocial-icons ul li:nth-child(4) a:hover{
+	background-color: #ff471a;
+}
